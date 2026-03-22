@@ -3,78 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An awesome website that showcases a variety of lions and their habitats.">
-    <meta name="keywords" content="lions, wildlife, nature, conservation">
-    <meta name="author" content="Fileina">
-    <title>Lions of the World</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="A collection of SoloLeones posts with dark theme styling.">
+    <meta name="keywords" content="SoloLeones, blog, dark theme, posts, contact">
+    <title>SoloLeones Blog</title>
     <style>
-        /* Improved button styling */
-        .button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .navigation {
+            position: sticky;
+            top: 0;
+            background-color: #1e1e1e;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .navigation a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .post {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #6200ea;
             color: white;
             border: none;
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
         }
-        .button:hover {
-            background-color: #45a049;
+        button:hover {
+            background-color: #3700b3;
         }
-        /* Sticky navigation styles */
-        nav {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
+        @media (max-width: 600px) {
+            body {
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- Functional contact form -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button class="button" type="submit">Send</button>
-            </form>
-        </section>
-        <!-- 20 posts from new code along with improvements -->
-        <section id="posts">
-            <h2>Latest Posts</h2>
-            <article>
-                <h3>Post Title 1</h3>
-                <p>Content for post 1...</p>
-            </article>
-            <article>
-                <h3>Post Title 2</h3>
-                <p>Content for post 2...</p>
-            </article>
-            <!-- More posts... -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Lions of the World. All rights reserved.</p>
-    </footer>
+    <div class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Posts</a>
+        <a href="#">Contact</a>
+    </div>
+    <h1>SoloLeones Posts</h1>
+    <div class="post">
+        <h2>Post 1 Title</h2>
+        <p>Post 1 content...</p>
+    </div>
+    <div class="post">
+        <h2>Post 2 Title</h2>
+        <p>Post 2 content...</p>
+    </div>
+    <!-- More posts here -->
+    <div class="post">
+        <h2>Post 20 Title</h2>
+        <p>Post 20 content...</p>
+    </div>
+    <h2>Contact Us</h2>
+    <form action="/submit_contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
 </body>
 </html>
