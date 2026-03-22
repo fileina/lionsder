@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lionsder</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial;
+  background:#0d0d0d;
+  color:white;
+}
+
+header{
+  text-align:center;
+  padding:60px 20px;
+  background:#111;
+}
+
+h1{
+  font-size:40px;
+}
+
+button{
+  padding:15px 25px;
+  border:none;
+  background:#00ffcc;
+  color:black;
+  font-weight:bold;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+section{
+  padding:40px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.post{
+  background:#1a1a1a;
+  padding:20px;
+  margin:20px 0;
+  border-radius:10px;
+}
+
+.post h3{
+  color:#00ffcc;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#111;
+}
+</style>
+
+<script>
+function irAlMuro(){
+  document.getElementById("muro").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<header>
+  <h1>Lionsder: la jungla de las ideas virales</h1>
+  <p>Descubre contenido visual, rápido y diseñado para llamar la atención.</p>
+  <button onclick="irAlMuro()">Ver publicaciones</button>
+</header>
+
+<!-- QUE ES -->
+<section>
+  <h2>¿Qué es Lionsder?</h2>
+  <p>
+  Lionsder es una plataforma donde reunimos publicaciones cortas, visuales y pensadas para despertar curiosidad.
+  Aquí encontrarás datos, ideas y contenidos diseñados para ser consumidos en segundos… y recordados por más tiempo.
+  </p>
+</section>
+
+<!-- BENEFICIOS -->
+<section>
+  <h2>Por qué seguir Lionsder</h2>
+  <ul>
+    <li>Contenido rápido de consumir</li>
+    <li>Publicaciones diseñadas para compartir</li>
+    <li>Ideas que llaman la atención desde el primer segundo</li>
+    <li>Actualizaciones constantes</li>
+  </ul>
+</section>
+
+<!-- CTA -->
+<section style="text-align:center;">
+  <h2>¿Listo para descubrir algo diferente?</h2>
+  <button onclick="irAlMuro()">Ir al muro de publicaciones</button>
+</section>
+
+<!-- MURO -->
+<section id="muro">
+  <h2>La jungla de publicaciones</h2>
+  <p>Explora ideas, datos y contenidos que destacan por su impacto.</p>
+
+  <!-- POST 1 -->
+  <div class="post">
+    <h3>Tu cerebro decide antes que tú</h3>
+    <p>
+    Estudios muestran que el cerebro toma decisiones segundos antes de que seas consciente de ellas.
+    <br><br>
+    Lo que llamas “decisión” puede ser solo una confirmación de algo que ya pasó en tu mente.
+    <br><br>
+    Compártelo si esto te sorprendió.
+    </p>
+  </div>
+
+  <!-- POST 2 -->
+  <div class="post">
+    <h3>No estás viendo todo lo que existe</h3>
+    <p>
+    Tus ojos solo captan una pequeña parte del espectro de luz.
+    <br><br>
+    Hay colores y formas que existen… pero nunca podrás ver.
+    <br><br>
+    Compártelo si te hizo pensar diferente.
+    </p>
+  </div>
+
+  <!-- POST 3 -->
+  <div class="post">
+    <h3>El silencio también comunica</h3>
+    <p>
+    No responder, no hablar o desaparecer también es un mensaje.
+    <br><br>
+    A veces, dice más que cualquier palabra.
+    <br><br>
+    ¿Lo habías pensado?
+    </p>
+  </div>
+
+  <!-- POST 4 -->
+  <div class="post">
+    <h3>Lo urgente está controlando tu vida</h3>
+    <p>
+    Pasas más tiempo reaccionando a lo urgente que construyendo lo importante.
+    <br><br>
+    Y eso, poco a poco, define tu futuro.
+    <br><br>
+    Compártelo si necesitas recordarlo.
+    </p>
+  </div>
+
+  <!-- POST 5 -->
+  <div class="post">
+    <h3>Lo simple casi siempre gana</h3>
+    <p>
+    Las ideas más simples son las que más se entienden, se comparten y se recuerdan.
+    <br><br>
+    Complicar no siempre es mejorar.
+    <br><br>
+    A veces, es lo contrario.
+    </p>
+  </div>
+
+</section>
+
+<!-- SOBRE -->
+<section>
+  <h2>Sobre Lionsder</h2>
+  <p>
+  Lionsder nace con la idea de hacer que la información impactante sea fácil de consumir.
+  <br><br>
+  En un mundo lleno de contenido, buscamos destacar lo que realmente llama la atención:
+  ideas simples, visuales y memorables.
+  <br><br>
+  Nuestro objetivo es crear un espacio donde cada publicación tenga un propósito:
+  hacerte pensar, reaccionar o compartir.
+  </p>
+
+  <h3>Visión</h3>
+  <ul>
+    <li>Hacer la información más accesible</li>
+    <li>Generar curiosidad</li>
+    <li>Crear una comunidad basada en ideas</li>
+  </ul>
+</section>
+
+<!-- CONTACTO -->
+<section>
+  <h2>Contacto</h2>
+  <p>
+  ¿Tienes una idea, propuesta o quieres colaborar con Lionsder?
+  <br><br>
+  Escríbenos y estaremos atentos.
+  </p>
+</section>
+
+<!-- MONETIZACION -->
+<section>
+  <h2>Anuncia en Lionsder</h2>
+  <p>
+  Lionsder es una plataforma enfocada en contenido visual y viral.
+  <br><br>
+  Ofrecemos espacios para marcas que buscan captar atención de forma directa y efectiva.
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Lionsder</p>
+</footer>
+
+</body>
+</html>
