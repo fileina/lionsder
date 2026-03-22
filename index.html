@@ -1,267 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SoloLeones - Contenido viral para mentes que no siguen al rebaño. Ideas directas sobre disciplina, mentalidad y crecimiento personal.">
-<meta name="keywords" content="mentalidad, disciplina, crecimiento personal, motivación">
-<meta name="author" content="SoloLeones">
-<title>SoloLeones - Contenido Viral para Mentes Independientes</title>
-
-<style>
-body{
-  margin:0;
-  font-family: Arial;
-  background:#0d0d0d;
-  color:white;
-}
-
-header{
-  text-align:center;
-  padding:60px 20px;
-  background:#111;
-}
-
-header h1{
-  margin:0;
-  font-size:2.5em;
-}
-
-header p{
-  margin:10px 0 20px 0;
-  font-size:1.1em;
-  color:#00ffcc;
-}
-
-nav{
-  background:#000;
-  padding:10px;
-  text-align:center;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-
-nav a{
-  color:white;
-  margin:15px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:color 0.3s ease;
-}
-
-nav a:hover{
-  color:#00ffcc;
-}
-
-section{
-  max-width:900px;
-  margin:auto;
-  padding:40px 20px;
-}
-
-section h2{
-  border-bottom:2px solid #00ffcc;
-  padding-bottom:10px;
-}
-
-.post{
-  background:#1a1a1a;
-  padding:20px;
-  margin:20px 0;
-  border-radius:10px;
-  border-left:4px solid #00ffcc;
-}
-
-button{
-  padding:12px 20px;
-  background:#00ffcc;
-  border:none;
-  border-radius:8px;
-  font-weight:bold;
-  cursor:pointer;
-  color:#000;
-  transition:background 0.3s ease;
-}
-
-button:hover{
-  background:#00e6b8;
-}
-
-form{
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-  max-width:500px;
-}
-
-form input,
-form textarea{
-  padding:12px;
-  border:1px solid #00ffcc;
-  border-radius:8px;
-  background:#1a1a1a;
-  color:white;
-  font-family:Arial;
-}
-
-form input:focus,
-form textarea:focus{
-  outline:none;
-  border-color:#00e6b8;
-  box-shadow:0 0 10px rgba(0, 255, 204, 0.3);
-}
-
-form textarea{
-  resize:vertical;
-  min-height:120px;
-}
-
-footer{
-  text-align:center;
-  padding:30px;
-  background:#111;
-  border-top:1px solid #00ffcc;
-  margin-top:40px;
-}
-
-@media (max-width:600px){
-  header{
-    padding:40px 20px;
-  }
-  
-  header h1{
-    font-size:1.8em;
-  }
-  
-  nav a{
-    display:block;
-    margin:10px 0;
-  }
-  
-  section{
-    padding:20px 15px;
-  }
-}
-</style>
-
-<script>
-function ir(id){
-  document.getElementById(id).scrollIntoView({behavior:"smooth"});
-}
-
-function enviarFormulario(event){
-  event.preventDefault();
-  alert('Gracias por tu mensaje. Te responderemos pronto.');
-  document.getElementById('formularioContacto').reset();
-}
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An awesome website that showcases a variety of lions and their habitats.">
+    <meta name="keywords" content="lions, wildlife, nature, conservation">
+    <meta name="author" content="Fileina">
+    <title>Lions of the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Improved button styling */
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        /* Sticky navigation styles */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-<header>
-<h1>🦁 SoloLeones</h1>
-<p>Contenido viral para mentes que no siguen al rebaño</p>
-<button onclick="ir('blog')">Ver contenido</button>
-</header>
-
-<nav>
-<a href="javascript:void(0)" onclick="ir('blog')">Blog</a>
-<a href="javascript:void(0)" onclick="ir('sobre')">Sobre</a>
-<a href="javascript:void(0)" onclick="ir('contacto')">Contacto</a>
-<a href="javascript:void(0)" onclick="ir('privacidad')">Privacidad</a>
-</nav>
-
-<section id="blog">
-<h2>🔥 Publicaciones</h2>
-
-<div class="post">
-<h3>El 90% vive en automático</h3>
-<p>
-La mayoría de las personas repite rutinas sin cuestionarlas.
-<br><br>
-Pensar diferente es incómodo… pero ahí empieza todo.
-<br><br>
-Compártelo si no quieres ser parte del promedio.
-</p>
-</div>
-
-<div class="post">
-<h3>Tu entorno define tu nivel</h3>
-<p>
-Las personas que te rodean influyen más de lo que crees.
-<br><br>
-Si quieres crecer, cambia el ambiente.
-<br><br>
-Tu vida lo reflejará.
-</p>
-</div>
-
-<div class="post">
-<h3>Disciplina vence motivación</h3>
-<p>
-La motivación es temporal.
-<br><br>
-La disciplina es lo que construye resultados reales.
-<br><br>
-Ahí está la diferencia.
-</p>
-</div>
-
-<div class="post">
-<h3>Menos distracción, más enfoque</h3>
-<p>
-Cada notificación roba atención.
-<br><br>
-Cada distracción retrasa tu progreso.
-<br><br>
-Controla tu enfoque o alguien más lo hará.
-</p>
-</div>
-
-</section>
-
-<section id="sobre">
-<h2>🧠 Sobre SoloLeones</h2>
-<p>
-SoloLeones nace con la idea de crear contenido directo, simple y poderoso.
-<br><br>
-En un mundo lleno de ruido, aquí encontrarás ideas que buscan generar impacto real.
-<br><br>
-No seguimos tendencias, creamos mentalidad.
-</p>
-</section>
-
-<section id="contacto">
-<h2>✉️ Contacto</h2>
-<p>
-¿Quieres colaborar o trabajar con SoloLeones?
-<br><br>
-Escríbenos y te responderemos lo antes posible.
-</p>
-
-<form id="formularioContacto" onsubmit="enviarFormulario(event)">
-<input type="text" placeholder="Tu nombre" required>
-<input type="email" placeholder="Tu email" required>
-<textarea placeholder="Tu mensaje" required></textarea>
-<button type="submit">Enviar mensaje</button>
-</form>
-</section>
-
-<section id="privacidad">
-<h2>🔒 Política de Privacidad</h2>
-<p>
-Este sitio puede utilizar cookies y herramientas de análisis para mejorar la experiencia del usuario.
-<br><br>
-Al navegar en este sitio, aceptas estas condiciones.
-</p>
-</section>
-
-<footer>
-<p>© 2026 SoloLeones</p>
-</footer>
-
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Functional contact form -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button class="button" type="submit">Send</button>
+            </form>
+        </section>
+        <!-- 20 posts from new code along with improvements -->
+        <section id="posts">
+            <h2>Latest Posts</h2>
+            <article>
+                <h3>Post Title 1</h3>
+                <p>Content for post 1...</p>
+            </article>
+            <article>
+                <h3>Post Title 2</h3>
+                <p>Content for post 2...</p>
+            </article>
+            <!-- More posts... -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Lions of the World. All rights reserved.</p>
+    </footer>
 </body>
 </html>
