@@ -3,53 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A collection of 20 amazing posts. Learn more about various topics with lionsder branding.">
-    <meta name="keywords" content="lionsder, posts, blog, contact">
-    <meta name="author" content="fileina">
-    <title>Lionsder - 20 Posts Collection</title>
     <link rel="stylesheet" href="styles.css">
+    <title>SoloLeones - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background: linear-gradient(to bottom right, #ffcc00, #ff6699);
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .post {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="sticky-nav">
-            <div class="logo">Lionsder</div>
-            <ul>
-                <li><a href="#posts">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to SoloLeones</h1>
     </header>
-
-    <main id="posts">
-        <h1>Welcome to the 20 Posts Collection</h1>
-        <article> <!-- Post 1 -->
-            <h2>Post Title 1</h2>
-            <p>Content for post 1...</p>
-        </article>
-        <article> <!-- Post 2 -->
-            <h2>Post Title 2</h2>
-            <p>Content for post 2...</p>
-        </article>
-        <!-- Repeat for all 20 posts -->
-        <article> <!-- Post 20 -->
-            <h2>Post Title 20</h2>
-            <p>Content for post 20...</p>
-        </article>
+    <main>
+        <!-- Dynamic blog posts will be generated here -->
+        <div class="post">Post 1 content...</div>
+        <div class="post">Post 2 content...</div>
+        <div class="post">Post 3 content...</div>
+        <div class="post">Post 4 content...</div>
+        <div class="post">Post 5 content...</div>
+        <div class="post">Post 6 content...</div>
+        <div class="post">Post 7 content...</div>
+        <div class="post">Post 8 content...</div>
+        <div class="post">Post 9 content...</div>
+        <div class="post">Post 10 content...</div>
+        <div class="post">Post 11 content...</div>
+        <div class="post">Post 12 content...</div>
+        <div class="post">Post 13 content...</div>
+        <div class="post">Post 14 content...</div>
+        <div class="post">Post 15 content...</div>
+        <div class="post">Post 16 content...</div>
+        <div class="post">Post 17 content...</div>
+        <div class="post">Post 18 content...</div>
+        <div class="post">Post 19 content...</div>
+        <div class="post">Post 20 content...</div>
     </main>
-
-    <footer id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+    <footer>
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
-        </form>
+        </div>
+        <div class="social-media-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 SoloLeones. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
