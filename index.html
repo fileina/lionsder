@@ -3,80 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A collection of SoloLeones posts with dark theme styling.">
-    <meta name="keywords" content="SoloLeones, blog, dark theme, posts, contact">
-    <title>SoloLeones Blog</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-        }
-        .navigation {
-            position: sticky;
-            top: 0;
-            background-color: #1e1e1e;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        }
-        .navigation a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .post {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #1e1e1e;
-            border-radius: 8px;
-        }
-        button {
-            background-color: #6200ea;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #3700b3;
-        }
-        @media (max-width: 600px) {
-            body {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <meta name="description" content="A collection of 20 amazing posts. Learn more about various topics with lionsder branding.">
+    <meta name="keywords" content="lionsder, posts, blog, contact">
+    <meta name="author" content="fileina">
+    <title>Lionsder - 20 Posts Collection</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navigation">
-        <a href="#">Home</a>
-        <a href="#">Posts</a>
-        <a href="#">Contact</a>
-    </div>
-    <h1>SoloLeones Posts</h1>
-    <div class="post">
-        <h2>Post 1 Title</h2>
-        <p>Post 1 content...</p>
-    </div>
-    <div class="post">
-        <h2>Post 2 Title</h2>
-        <p>Post 2 content...</p>
-    </div>
-    <!-- More posts here -->
-    <div class="post">
-        <h2>Post 20 Title</h2>
-        <p>Post 20 content...</p>
-    </div>
-    <h2>Contact Us</h2>
-    <form action="/submit_contact" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required></textarea><br>
-        <button type="submit">Send</button>
-    </form>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">Lionsder</div>
+            <ul>
+                <li><a href="#posts">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="posts">
+        <h1>Welcome to the 20 Posts Collection</h1>
+        <article> <!-- Post 1 -->
+            <h2>Post Title 1</h2>
+            <p>Content for post 1...</p>
+        </article>
+        <article> <!-- Post 2 -->
+            <h2>Post Title 2</h2>
+            <p>Content for post 2...</p>
+        </article>
+        <!-- Repeat for all 20 posts -->
+        <article> <!-- Post 20 -->
+            <h2>Post Title 20</h2>
+            <p>Content for post 20...</p>
+        </article>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
